@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+     <p id="text"></p>
+
+
+      
+        <script>
+
+            var text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat ante sed fringilla bibendum. In quam elit, rutrum quis adipiscing id, iaculis eu ipsum. Morbi faucibus lectus at ante feugiat dignissim. In turpis turpis, placerat in fringilla eget, sodales blandit lacus. Vivamus tempor blandit mauris nec semper. Sed cursus metus sed justo cursus bibendum. Maecenas ornare sem sed lacinia auctor. Nulla sapien dolor, faucibus vitae dapibus in, commodo id est. Sed a ipsum laoreet, convallis lacus eu, hendrerit magna.';
+            
+            var curr = 0;
+            
+             function write(){
+            
+                var elem = document.getElementById('text');
+                elem.textContent = elem.textContent + text.charAt(curr);
+                curr++;    
+            };
+            
+                function timer(){
+                    if (curr < text.length){
+                    setInterval('write()', 20);
+                    }
+                }
+                timer();
+            
+                </script>
+    </body>
+</html>

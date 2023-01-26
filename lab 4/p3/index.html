@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #mainwrapper{
+                width:800px;
+                padding:10px;
+               
+                margin:20px auto;
+                text-align:center;
+            }
+            img{
+                width:400px;
+                height:400px;
+                margin:10px;
+            }
+            #btnwrapper{
+                width:600px;
+                margin:10px auto;
+            }
+            input{
+                width:100px;
+                padding:10px;
+                border-radius:10px;
+                font:bold 15px verdana;
+            }
+            input:focus{
+                background-color:pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mainwrapper">
+            <img src="../UP/1.jpg" id="myimg"/>
+            <div id="btnwrapper">
+                <input type="button" value="<" onclick="prevfun();" />
+                <input type="button" value="Start" onclick="startfun();" />
+                <input type="button" value="Stop" onclick="stopfun();" />
+                <input type="button" value=">" onclick="nextfun();" />
+            </div>
+        </div>
+        <script src="main.js"></script>
+        
+    </body>
+</html>
