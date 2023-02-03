@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>
+            My Form Question
+        </title>
+        <style>
+
+            ul {
+            list-style: none;
+            padding: 10;
+            margin: 10;
+            }
+
+            form li + li {
+            margin-top: 1em;
+            }
+
+            label {
+            /* Uniform size & alignment */
+            display: inline-block;
+            width: 150px;
+            text-align: left;
+            }
+
+            input,
+            textarea {
+            /* To make sure that all text fields have the same font settings
+                By default, textareas have a monospace font */
+            font: 1em sans-serif;
+
+            /* Uniform text field size */
+            width: 200px;
+            box-sizing: border-box;
+
+            /* Match form field borders */
+            border: 1px solid #999;
+            }
+
+            input:focus,
+            textarea:focus {
+            /* Additional highlight for focused elements */
+            border-color: #000;
+            }
+
+            textarea {
+            /* Align multiline text fields with their labels */
+            vertical-align: top;
+
+            /* Provide space to type some text */
+            height: 5em;
+            }
+
+            .button {
+            /* Align buttons with the text fields */
+            padding-left: 100px; /* same size as the label elements */
+            }
+
+            button {
+            /* This extra margin represent roughly the same space as the space
+                between the labels and their text fields */
+            margin-left: 100em;
+            }
+            #im{
+                width: 250px;
+
+            }
+            #col{
+                width:180px;
+            }
+        </style>
+    </head>
+
+
+    <body>
+
+        <form action="q2_b.html" method="get" id="my_form">
+            <ul>
+              <li>
+                <label for="name">Enter your Name:</label>
+                <input type="text" id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="age">Enter your age:</label>
+                <input type="age" id="age" name="user_age" />
+              </li>
+              <br>
+              <li>
+
+                <label for="gender">Select your gender:</label><br><br>
+                <label for="male" id="im">
+                    <img src="male.png" height="250" width="250">
+                </label>
+                <label for="female" id="im">
+                    <img src="female.png" height="250" width="250">
+                </label><br><br>
+                <input type="radio" id="male" name="gender" value="Male">
+                <input type="radio" id="female" name="gender" value="Female">
+
+            </li>
+                <label for="colors" id="col">Choose your prefered color:</label>
+                <select name="colors" id="colors" form = "my_form">
+                <option value="green">Green</option>
+                <option value="red">Red</option>
+                <option value="yellow">yellow</option>
+                <option value="blue">Blue</option>
+                </select>
+            <li>
+            <input type="submit" value="Submit">
+            </li>    
+        </ul>
+          </form>
+
+    </body>
+
+
+
+</html>

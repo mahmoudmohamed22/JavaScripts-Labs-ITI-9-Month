@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+</head>
+<body>
+    
+    <script>
+        
+        let query = location.search.substring(1).split("&")
+        
+        let name = query[0].substring(query[0].indexOf("=")+1).toUpperCase()
+        let color = query[3].substring(query[3].indexOf("=")+1).toLowerCase()
+        
+        my_img = document.createElement("img")
+        my_img.src=query[2].substring(query[2].indexOf("=")+1).toLowerCase() + ".png"
+        my_img.width = 250
+        my_img.height = 250
+        document.body.appendChild(my_img)
+        
+        document.write(" welcome  "+ name.fontcolor(color));
+    </script>
+
+</body>
+</html>
